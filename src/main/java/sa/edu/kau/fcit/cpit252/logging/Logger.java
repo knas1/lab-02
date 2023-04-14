@@ -11,8 +11,9 @@ public class Logger {
     String currentDateTimeString = LocalDateTime.now().format(myFormatter);
     private final String logFile = currentDateTimeString + ".txt";
     private PrintWriter writer;
+    private static Logger loggerInstance;
 
-    public Logger() {
+    private Logger() {
         try {
             FileWriter fw = new FileWriter(logFile);
             writer = new PrintWriter(fw, true);
@@ -21,6 +22,14 @@ public class Logger {
             ex.printStackTrace();
         }
     }
+
+    public static Logger getLoggerInstance(){
+        if(loggerInstance==null){
+            loggerInstance = new Logger();
+        }
+        return loggerInstance;
+    }
+
     public void info (String message) {
         writer.println("INFO: " + message);
     }
