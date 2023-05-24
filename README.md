@@ -1,3 +1,3 @@
 # lab-02
 Lab 2: Singleton Design Pattern
-[![knas1](https://circleci.com/gh/knas1/lab-02.svg?style=svg)](https://app.circleci.com/pipelines/github/knas1/lab-02)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/knas1/lab-02/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/knas1/lab-02/tree/main)[![codecov](https://codecov.io/gh/knas1/lab-02/branch/main/graph/badge.svg?token=KVSHNUXQN7)](https://codecov.io/gh/knas1/lab-02)
